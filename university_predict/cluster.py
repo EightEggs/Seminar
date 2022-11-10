@@ -8,6 +8,7 @@ clusters.append(Agg(n_clusters=2, affinity='cosine', linkage='complete'))
 clusters.append(Birch(n_clusters=2))
 
 data = pd.read_csv('data.csv')
+data.drop_duplicates()
 vect = data.iloc[:, 4:-1]
 
 hit = 0

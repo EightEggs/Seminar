@@ -4,6 +4,7 @@ from sklearn.utils import shuffle
 
 clf = tree.DecisionTreeClassifier(max_depth=7)
 data = pd.read_csv('data.csv')
+data.drop_duplicates()
 
 pred_num = 100  # number of predicting sets
 run_times = 20  # number of run times for calculating average accuracy

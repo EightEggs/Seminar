@@ -1,6 +1,7 @@
 .venv/
 .vscode/
 
+*.doc
 *.docx
 *.pptx
 *.avi
